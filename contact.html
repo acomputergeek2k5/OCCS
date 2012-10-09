@@ -1,23 +1,74 @@
+<!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-	<header>
-		<h1>Orlando County Carpeting Services</h1>
-	</header>
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About OCCS</a></li>
-			<li><a href="residential.html">Residential Cleaning</a></li>
-			<li><a href="commercial.html">Commercial Cleaning</a></li>
-			<li><a href="contact.html">Contact Us</a></li>
-			<li><a href="form.html">Request Service/Quote</a></li>
-		</ul>
-	</nav>
-	<footer>
-		<i>(c)2012 Orlando County Carpeting Services</i> <a href="index.html">Home</a> | <a href="#">Privacy</a> | <a href="#">Employment</a> | <a href="#">Referal</a> | <a href="#">Pet/Baby Safe</a> | <a href="#">Awards</a>
-	</footer>
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<title>Orlando County Carpeting Services</title>
+		<link rel="stylesheet" href="styles.css" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<header>
+			<div class="wrapper">
+				<h1 class="logo"><a href="index.html">OCCS</a></h1>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="#">Residential</a></li>
+					<li><a href="#">Commercial</a></li>
+					<li class="active"><a href="contact.html">Contact Us</a></li>
+					<li><a href="form.html">Service Form</a></li>
+				</ul>
+			</div><!--.wrapper-->
+		</header>
+		<section class="home_feature">
+			<div class="wrapper">
+				<article class="main_display">
+					<img src="images/prochemspottingkit.jpg" alt="Our New Trucks!" title="Our New Trucks!" />
+				</article>
+				<article class="feature_text">
+					<h2>We only use Pet/Child safe chemicals from Prochem!</h2>
+					<p>You can be assured that your children and your pets will be safe after we clean your carpets. Our chemicals have been tested to be safe! We only use Prochem chemicals, a leader in professional carpet cleaning for over 35 years.</p>
+					<a href="#">Click me to find out more</a>
+				</article>
+			</div><!--.wrapper-->
+		</section>
+		
+<!--Contact Form-->
+
+		<form id=contact>
+			<fieldset>
+				<legend>Your details</legend>
+				<ol>
+					<li>
+						<label for=name>Name</label>
+						<input id=name name=name type=text placeholder="First and Last Name" required autofocus>
+					</li>
+					<li>
+						<label for=email>Email</label>
+						<input id=email name=email type=email placeholder="example@domain.com" required>
+					</li>
+					<li>
+						<label for=phone>Phone</label>
+						<input id=phone name=phone type=tel placeholder="Eg. 123-456-7890" required>
+					</li>
+				</ol>
+			</fieldset>
+			<fieldset>
+				<legend>Share your comments</legend>	
+					<textarea id=comment name=comment rows=8 required>
+						</textarea>
+			</fieldset>
+			<fieldset>
+				<button type=submit>Submit!</button>
+			</fieldset>
+		</form>
+		</div><!--.wrapper-->
+		
+<!--Begin Footer-->	
+		<footer>
+			<div class="wrapper">
+				<p class="copyright_notice">Copyright 2012 &copy; <strong>OCCS</strong>. All Rights Reserved.</p>	
+			</div><!--.wrapper-->
+		</footer><!--End Footer-->
+	</body>
 </html>
